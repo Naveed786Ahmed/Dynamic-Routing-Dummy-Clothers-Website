@@ -18,7 +18,7 @@ const Card = (item) => {
                         {item.item.title}
                     </h4>
                     <p className='card-price'>
-                        Price: $120
+                        Price: ${item.item.price}
                     </p>
                     <div className="cardBtnContainer">
                         <div className="cardBtn" onClick={() => navigate(`/productdetail/${item.item.id}`)}>
