@@ -1,0 +1,508 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.navContainer {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    padding: 5px;
+    background-color: black;
+}
+
+.navLogo {
+    width: 90%;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.7rem;
+    font-weight: 700;
+    font-family: '';
+    color: white;
+    cursor: pointer;
+}
+
+.navLogo>span {
+    color: #06aaf1;
+    margin-left: 8px;
+}
+
+.navicons {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.searchIcon,
+.loginIcon {
+    width: 50%;
+    height: 50px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #06aaf1;
+}
+
+@media (min-width: 400px) and (max-width: 750px) {
+    .navLogo {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .navicons {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .searchIcon,
+    .loginIcon {
+        width: 8%;
+        height: 50px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        color: #06aaf1;
+    }
+}
+
+@media (min-width: 1px) and (max-width: 400px) {
+    .navLogo {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+
+    .navicons {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .searchIcon,
+    .loginIcon {
+        width: 8%;
+        height: 30px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        color: #06aaf1;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 990px) {
+    .navLogo {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+
+    .navicons {
+        width: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5px;
+    }
+
+    .searchIcon,
+    .loginIcon {
+        width: 8%;
+        height: 50px;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        color: #06aaf1;
+    }
+}
+
+.CardContainer {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cardImage {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.card-body {
+    width: 100%;
+    height: 40%;
+    padding: 0px;
+    text-align: center;
+}
+
+.card-text {
+    width: 100%;
+    height: 40%;
+    padding: 5px;
+    overflow: hidden;
+    font-size: 1.3rem;
+    margin-bottom: 3px;
+    color: #032838;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-price {
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 3px;
+    color: #016b99;
+}
+
+.cardBtnContainer {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardBtn {
+    width: 90%;
+    height: 70%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: #032838;
+    color: white;
+    cursor: pointer;
+}
+
+.cardBtn:active {
+    opacity: 0.5;
+}
+
+.card {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.DetailParentBox {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.DetailChildBox {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.detailImage {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detaildesc {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.crossIcon {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    color: #016b99;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.detaildesHead {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    color: #134c65;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.detaildesPera {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #134c65;
+    font-weight: 600;
+}
+
+.description {
+    width: 100%;
+    font-size: 1rem;
+    color: #032838;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.AddCartContainer {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.incre,
+.dec {
+    width: 10%;
+    height: 70%;
+    background-color: #032838;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+.add-to {
+    width: 65%;
+    height: 70%;
+    background-color: #032838;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.incre:active,
+.add-to:active,
+.dec:active {
+    opacity: 0.5;
+}
+
+.one {
+    display: none;
+}
+
+.Footer{
+    width: 100%;
+    height: 40px;
+    background-color: #032838;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+
+@media (min-width: 1px) and (max-width: 450px) {
+    .DetailParentBox {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .DetailChildBox {
+        width: 90%;
+        height: 90%;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .detailImage {
+        width: 100%;
+        height: 45%;
+        position: relative;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+
+    .detaildesc {
+        width: 100%;
+        height: 55%;
+    }
+
+    .crossIcon {
+        position: absolute;
+        right: 10px;
+        top: 8px;
+        color: #016b99;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .one{
+        display: block;
+        position: absolute;
+        top: 10px;
+    }
+    .two{
+        display: none;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 700px) {
+    .DetailParentBox {
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .DetailChildBox {
+        width: 95%;
+        height: auto;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .detailImage {
+        width: 50%;
+        height: 100%;
+    }
+
+    .detaildesc {
+        width: 50%;
+        height: 100%;
+        padding: 20px;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    }
+    
+    .crossIcon {
+        position: absolute;
+        right: 10px;
+        top: 8px;
+        color: #016b99;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    
+    .detaildesHead {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        color: #134c65;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    .detaildesPera {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #134c65;
+        font-weight: 600;
+    }
+    
+    .description {
+        width: 100%;
+        font-size: 1rem;
+        color: #032838;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+    }
+    
+    .AddCartContainer {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .incre,
+    .dec {
+        width: 10%;
+        height: 70%;
+        background-color: #032838;
+        border-radius: 10px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    
+    
+    .add-to {
+        width: 65%;
+        height: 70%;
+        background-color: #032838;
+        border-radius: 10px;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1rem;
+        font-weight: 700;
+        cursor: pointer;
+    }
+    
+    .incre:active,
+    .add-to:active,
+    .dec:active {
+        opacity: 0.5;
+    }
+    
+    .one {
+        display: none;
+    }
+}
